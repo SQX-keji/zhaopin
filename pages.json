@@ -1,0 +1,319 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				// "navigationBarBackgroundColor": "#E5EEFF",
+				"navigationBarBackgroundColor": "#00DD9A",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": true
+					// #ifdef H5
+					,
+				"navigationStyle": "custom"
+				// #endif 
+			}
+		},
+		{
+			"path": "pages/index/citys/citys",
+			"style": {
+				"navigationBarTitleText": "城市"
+					// #ifdef H5
+					,
+				"navigationStyle": "custom"
+				// #endif 
+
+			}
+		},
+		{
+			"path": "pages/msg/index",
+			"style": {
+				"navigationBarTitleText": "消息",
+				"enablePullDownRefresh": true
+					// #ifdef H5
+					,
+				"navigationStyle": "custom"
+				// #endif 
+
+			}
+		},
+		{
+			"path": "pages/my/index",
+			"style": {
+				"navigationBarTitleText": "我的",
+
+				// "navigationBarBackgroundColor": "#E5EEFF"
+				"navigationBarBackgroundColor": "#D9FEED"
+					// #ifdef H5
+					,
+				"navigationStyle": "custom"
+				// #endif 
+
+			}
+		},
+		{
+			"path": "pages/public/login",
+			"style": {
+				"navigationBarTitleText": "登录"
+					// #ifdef H5
+					,
+				"navigationStyle": "custom"
+				// #endif 
+
+			}
+		},
+		{
+			"path": "pages/public/forgetPwd",
+			"style": {
+				"navigationBarTitleText": "重置密码"
+					// #ifdef H5
+					,
+				"navigationStyle": "custom"
+				// #endif 
+
+			}
+		},
+
+		{
+			"path": "pages/public/loginphone",
+			"style": {
+				"navigationBarTitleText": "登录"
+					// #ifdef H5
+					,
+				"navigationStyle": "custom"
+				// #endif 
+
+			}
+		},
+		{
+			"path": "pages/public/pwd",
+			"style": {
+				"navigationBarTitleText": "修改密码"
+					// #ifdef H5
+					,
+				"navigationStyle": "custom"
+				// #endif 
+
+			}
+		},
+		{
+			"path": "pages/public/register",
+			"style": {
+				"navigationBarTitleText": "注册"
+					// #ifdef H5
+					,
+				"navigationStyle": "custom"
+				// #endif 
+
+			}
+		}, {
+			"path": "pages/public/selectIdentity/selectIdentity",
+			"style": {
+				"navigationBarTitleText": "选择身份",
+				"enablePullDownRefresh": false
+					// #ifdef H5
+					,
+				"navigationStyle": "custom"
+				// #endif 
+
+			}
+
+		}
+	],
+	"subPackages": [{
+		"root": "package",
+		"pages": [
+			//个人
+			{
+				"path": "my/resume",
+				"style": {
+					"navigationBarTitleText": "我的简历",
+					"enablePullDownRefresh": true
+						// #ifdef H5
+						,
+					"navigationStyle": "custom"
+					// #endif 
+				}
+			}, {
+				"path": "jobIntention/jobIntention",
+				"style": {
+					"navigationBarTitleText": "管理求职意向",
+					"enablePullDownRefresh": false
+						// #ifdef H5
+						,
+					"navigationStyle": "custom"
+					// #endif 
+				}
+
+			}, {
+				"path": "jobIntention/add",
+				"style": {
+					"navigationBarTitleText": "求职意向",
+					"enablePullDownRefresh": false
+						// #ifdef H5
+						,
+					"navigationStyle": "custom"
+					// #endif 
+				}
+
+			},
+			{
+				"path": "jobIntention/jobList",
+				"style": {
+					"navigationBarTitleText": "岗位分类",
+					"enablePullDownRefresh": false
+						// #ifdef H5
+						,
+					"navigationStyle": "custom"
+					// #endif 
+				}
+
+			},
+			{
+				"path": "jobIntention/industry",
+				"style": {
+					"navigationBarTitleText": "期望行业",
+					"enablePullDownRefresh": false
+						// #ifdef H5
+						,
+					"navigationStyle": "custom"
+					// #endif 
+				}
+
+			},
+			{
+				"path": "jobIntention/city",
+				"style": {
+					"navigationBarTitleText": "工作地址",
+					"enablePullDownRefresh": false
+						// #ifdef H5
+						,
+					"navigationStyle": "custom"
+					// #endif 
+				}
+
+			}, {
+				"path": "addJob/addJob",
+				"style": {
+					"navigationBarTitleText": "发布招聘",
+					"enablePullDownRefresh": false
+						// #ifdef H5
+						,
+					"navigationStyle": "custom"
+					// #endif 
+				}
+
+			}, {
+				"path": "screen/city",
+				"style": {
+					"navigationBarTitleText": "城市",
+					"enablePullDownRefresh": false
+						// #ifdef H5
+						,
+					"navigationStyle": "custom"
+					// #endif 
+				}
+
+			}, {
+				"path": "screen/screen",
+				"style": {
+					"navigationBarTitleText": "筛选",
+					"enablePullDownRefresh": false
+						// #ifdef H5
+						,
+					"navigationStyle": "custom"
+					// #endif 
+				}
+
+			}, {
+				"path": "search/search",
+				"style": {
+					"navigationBarTitleText": "搜索",
+					"enablePullDownRefresh": true
+						// #ifdef H5
+						,
+					"navigationStyle": "custom"
+					// #endif 
+				}
+
+			}
+		]
+	}, {
+		"root": "my",
+		"pages": [{
+				"path": "renzheng/index",
+				"style": {
+					"navigationBarTitleText": "企业认证"
+						// #ifdef H5
+						,
+					"navigationStyle": "custom"
+					// #endif 
+				}
+			},
+			{
+				"path": "publish/editor",
+				"style": {
+					"navigationBarTitleText": "我的简历"
+						// #ifdef H5
+						,
+					"navigationStyle": "custom"
+					// #endif 
+				}
+			},
+			{
+				"path": "enterpriseInfo/enterpriseInfo",
+				"style": {
+					"navigationBarTitleText": "企业详情",
+					"enablePullDownRefresh": false,
+					"navigationBarBackgroundColor": "#4B4D5C",
+					"navigationBarTextStyle": "white",
+					"app-plus": {
+						// 将回弹属性关掉
+						"bounce": "none"
+					}
+					// #ifdef H5
+					,
+					"navigationStyle": "custom"
+					// #endif 
+
+
+				}
+
+			}
+		]
+	}],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "省钱兄招聘",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#ffffff"
+	},
+	"tabBar": {
+		"color": "#CCCCCC",
+		"selectedColor": "#00B88F",
+		"backgroundColor": "#FFFFFF",
+		"borderStyle": "black",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tabbar/index_.png",
+				"selectedIconPath": "static/tabbar/index.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/msg/index",
+				"iconPath": "static/tabbar/msg_.png",
+				"selectedIconPath": "static/tabbar/msg.png",
+				"text": "消息"
+			},
+			{
+				"pagePath": "pages/my/index",
+				"iconPath": "static/tabbar/my_.png",
+				"selectedIconPath": "static/tabbar/my.png",
+				"text": "我的"
+			}
+		]
+	}
+}
